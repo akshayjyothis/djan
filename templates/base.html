@@ -19,7 +19,14 @@
     </div>
 </div>
 <script type="text/javascript">
-    
+    fetch('/device')
+  .then(response => response.json())
+  .then(data => console.log(data));
+
+  fetch('/face')
+  .then(response => response.json())
+  .then(data => console.log(data));
+
 </script>
 </body>
 
